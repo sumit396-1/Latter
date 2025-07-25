@@ -444,4 +444,41 @@ footer {
   to {
     opacity: 1;
   }
+/* --- Default styles (for mobile phones) --- */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+.box {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+/* --- Styles for tablets and larger screens (e.g., screen width > 768px) --- */
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px; /* Set a max width for the content on larger screens */
+    margin: 0 auto;   /* Center the container on the page */
+    display: flex;    /* Use Flexbox for a multi-column layout */
+    gap: 20px;        /* Add space between the columns */
+  }
+
+  .box {
+    width: 50%; /* Make each box take up half of the container width */
+  }
+}
+
+/* --- Styles for laptops and very large screens (e.g., screen width > 1200px) --- */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Allow a wider container on big screens */
+  }
+
+  h1 {
+    font-size: 3em; /* Make the title larger on desktops */
+  }
+}
+
 }
