@@ -7,10 +7,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+
 
 
 #card-front {
@@ -74,11 +75,11 @@ body {
 }
 
 #card-inside {
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.4;
   font-family: 'Lobster';
   color: #331717;
-  font-style: italic;
+  font-style: normal;
 }
 
 p {
